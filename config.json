@@ -1,6 +1,6 @@
 {
     "host": "0.0.0.0",
-    "port": 3000,
+    "port": 10021,
     "debugLevel": 1,
     "foodMass": 1,
     "fireFood": 15,
@@ -26,7 +26,7 @@
     "slowBase": 4.5,
     "logChat": 0,
     "networkUpdateFactor": 30,
-    "maxHeartbeatInterval": 5000,
+    "maxHeartbeatInterval": 10000,
     "foodPlacementUniformityLevel": 1,
     "virusPlacementUniformityLevel": 3,
     "newPlayerInitialPosition": "farthest",
