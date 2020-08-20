@@ -2,6 +2,7 @@ var io = require('socket.io-client');
 var ChatClient = require('./chat-client');
 var Canvas = require('./canvas');
 var global = require('./global');
+var socketPath = '/agar';
 
 var playerNameInput = document.getElementById('playerNameInput');
 var socket;
@@ -50,7 +51,7 @@ function startGame(type) {
     document.getElementById('startMenuWrapper').style.maxHeight = '0px';
     document.getElementById('gameAreaWrapper').style.opacity = 1;
     if (!socket) {
-        socket = io({query:"type=" + type});
+        socket = io({query:"type=" + type, path: socketPath + '/socket.io'});
         setupSocket(socket);
     }
     if (!global.animLoopHandle)
